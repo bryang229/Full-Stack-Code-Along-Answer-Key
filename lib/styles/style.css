@@ -1,0 +1,44 @@
+body{
+    background-color: #f0c3a0;
+    color:white;
+}
+
+/* Making the forms look nice :) */
+#forms{
+    display:flex;
+    flex-flow:row;
+}
+
+/* Making our form content look nice */
+.formContainer{
+    background-color: #dd4224;
+    display: flex;
+    flex-flow: column;
+    width: 15%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius:3px;
+}
+
+/* Styling our users! */
+.users{
+    background-color: #f3a712;
+    display: flex;
+    flex-flow: column;
+    width:15%;
+    max-width: 250px;
+    min-width: 180px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#main{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}

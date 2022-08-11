@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="lib/styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="lib/js/component.js" defer></script>
+    <script src="lib/js/script.js" defer></script>
+
+</head>
+<body>
+
+
+
+    <div id="forms">
+        <!-- Create Users forms -->
+        <form class ="formContainer" id="getNewUser">
+            <p>Get new Users!</p>
+                <label for="newUserAmount"> How many pokemon (Max 100):</label>
+                <input id="newUserAmount" placeholder="i.e. 50" type="text">
+                <input id="newUserButton" type="submit">
+        </form>
+        <hr>
+        <form class ="formContainer" id="getOldUser">
+            <p>Get pokemon from our DB!</p>
+                <label for="oldUserAmount"> How many pokemon (Max 100):</label>
+                <input id="oldUserAmount" placeholder="i.e. 50" type="text">
+                <input id="oldUserButton" type="submit">
+        </form>
+    </div>
+    <div id="main">
+
+    </div>
+    <script>
+        axios.post('http://127.0.0.1:3000/loadUsers');
+    </script>
+
+</body>
+
+</html>
